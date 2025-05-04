@@ -1,0 +1,108 @@
+body {
+    font-family: 'Tajawal', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 24px 20px 16px 20px;
+}
+header h1 {
+    color: #1a8a34;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.avatar img {
+    border-radius: 50%;
+    border: 2px solid #1a8a34;
+}
+.contact-details {
+    text-align: center;
+}
+.contact-details h2 {
+    margin: 0 0 6px 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+.contact-details p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 1rem;
+}
+.note {
+    background: #e9fbe9;
+    color: #1a8a34;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 0.98rem;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px 0 10px 0;
+    align-items: center;
+}
+.whatsapp-btn, .call-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(26,138,52,0.08);
+}
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+    border: none;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.call-btn {
+    background: #1a8a34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.rotate-on-hover {
+    animation: rotate360 0.5s linear;
+}
+@keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 30px;
+    padding: 10px 0 0 0;
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 10px 2vw 10px 2vw;
+    }
+    header h1 {
+        font-size: 1.1rem;
+    }
+    .actions .whatsapp-btn, .actions .call-btn {
+        font-size: 1rem;
+        padding: 10px 10px;
+    }
+} 
